@@ -1,0 +1,109 @@
+.header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 67px;
+    padding: 27px 0px 28px 0px;
+    
+    &__logo {
+        width: 97px;
+        height: 67px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 846px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+        max-width: 412px;
+        height: 25px;
+        gap: 40px;
+    }
+
+    &__nav-el {
+        color: #BAB9B9;
+        padding-bottom: 6px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        transition: .2s ease-in-out;
+
+        font-size: 16px;
+        font-weight: 500;
+
+        &:hover {
+            color: #FFFFFF;
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+            transition: .2s ease-in-out;
+
+        }
+    }
+
+    &__auth {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 271px;
+        height: 50px;
+
+        li {
+            color: #fff;
+
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        li:first-of-type {
+            border: 1px solid rgba(255, 255, 255, 1);
+            border-radius: 100px;
+            color: #fff;
+            background-color: none;
+            transition: .2s;
+
+            &:hover {
+                background-color: #fff;
+                color: rgba(16, 28, 38, 1);
+                transition: .2s;
+            }
+        }
+
+        li:last-of-type {
+            border: none;
+            border-radius: 100px;
+            background-color: #F0E714;
+            color: rgba(16, 28, 38, 1);
+            transition: .2s;
+
+            &:hover {
+                background-color: rgb(153, 148, 13);
+                color: rgba(16, 28, 38, 1);
+                transition: .2s;
+            }
+        }
+        
+        li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li:first-of-type a {
+            width: 117px;
+            height: 50px;
+        }
+
+        li:last-of-type a {
+            width: 138px;
+            height: 52px;
+        }
+    }
+}
